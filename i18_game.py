@@ -35,6 +35,7 @@ class JumpGame:
             if pyxel.btnp(pyxel.KEY_SPACE) or pyxel.btnp(pyxel.GAMEPAD1_BUTTON_A):
                 self.reset_game()
             return
+        print(1)
 
         # --- プレイヤーの動き ---
         # ジャンプ
@@ -141,5 +142,6 @@ class JumpGame:
             # HUD (スコア)
             pyxel.text(5, 5, f"SCORE: {self.score}", 7)
             pyxel.text(120, 5, f"SPD: {self.speed:.1f}", 6)
+            print(2)
 
 JumpGame()
